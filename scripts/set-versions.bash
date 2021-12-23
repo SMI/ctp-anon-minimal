@@ -9,7 +9,7 @@ fi
 
 set -ex
 
-VER="$1"
+VER="${1#v}"
 
 mvn \
     -ntp \
