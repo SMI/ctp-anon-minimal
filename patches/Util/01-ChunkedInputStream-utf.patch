@@ -1,0 +1,13 @@
+diff --git a/source/java/org/rsna/util/ChunkedInputStream.java b/source/java/org/rsna/util/ChunkedInputStream.java
+index 74da4d1..2b9cd5f 100644
+--- a/source/java/org/rsna/util/ChunkedInputStream.java
++++ b/source/java/org/rsna/util/ChunkedInputStream.java
+@@ -36,7 +36,7 @@ import java.io.InputStream;
+  * not requiring the client to remember to read the entire contents of the
+  * response.
+  *
+- * @author Ortwin Glück
++ * @author Ortwin GlÃ¼ck
+  * @author Sean C. Sullivan
+  * @author Martin Elwin
+  * @author Eric Johnson

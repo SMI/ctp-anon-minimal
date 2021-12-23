@@ -1,0 +1,10 @@
+diff --git a/source/java/org/rsna/ctp/stdstages/PosdaExportService.java b/source/java/org/rsna/ctp/stdstages/PosdaExportService.java
+index e2e989f..b35a6f2 100644
+--- a/source/java/org/rsna/ctp/stdstages/PosdaExportService.java
++++ b/source/java/org/rsna/ctp/stdstages/PosdaExportService.java
+@@ -1,4 +1,4 @@
+-package edu.uams.tcia;
++package org.rsna.ctp.stdstages;
+
+ import java.io.*;
+ import java.net.HttpURLConnection;

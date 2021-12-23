@@ -1,0 +1,49 @@
+diff --git a/source/java/org/rsna/ctp/Configuration.java b/source/java/org/rsna/ctp/Configuration.java
+index 4acd2e1..48ccad1 100644
+--- a/source/java/org/rsna/ctp/Configuration.java
++++ b/source/java/org/rsna/ctp/Configuration.java
+@@ -23,7 +23,6 @@ import org.rsna.ctp.pipeline.ExportService;
+ import org.rsna.ctp.pipeline.ImportService;
+ import org.rsna.ctp.pipeline.Pipeline;
+ import org.rsna.ctp.pipeline.PipelineStage;
+-import org.rsna.ctp.pipeline.Quarantine;
+ import org.rsna.ctp.plugin.Plugin;
+ import org.rsna.server.HttpServer;
+ import org.rsna.util.CipherUtil;
+@@ -255,9 +254,6 @@ public class Configuration {
+
+ 		//Start the web server.
+ 		if (httpServer != null) httpServer.start();
+-
+-		//Start the quarantine purge thread
+-		Quarantine.startQuarantinePurge();
+ 	}
+
+ 	/**
+@@ -505,4 +501,4 @@ public class Configuration {
+ 		}
+ 	}
+
+-}
+\ No newline at end of file
++}
+diff --git a/source/java/org/rsna/ctp/pipeline/PipelineStage.java b/source/java/org/rsna/ctp/pipeline/PipelineStage.java
+index e45237c..4721398 100644
+--- a/source/java/org/rsna/ctp/pipeline/PipelineStage.java
++++ b/source/java/org/rsna/ctp/pipeline/PipelineStage.java
+@@ -26,8 +26,6 @@ public interface PipelineStage {
+
+ 	public String getID();
+
+-	public Quarantine getQuarantine();
+-
+ 	public String getConfigHTML(User user);
+
+ 	public String getStatusHTML();
+@@ -52,4 +50,4 @@ public interface PipelineStage {
+
+ 	public void setPreviousStage(PipelineStage previousStage);
+
+-}
+\ No newline at end of file
++}
