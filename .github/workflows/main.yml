@@ -51,8 +51,6 @@ jobs:
           java-version: "8"
           distribution: "temurin"
           cache: maven
-      - name: build all
-        run: ./scripts/build/run-all.bash
       - name: deploy
         run: .github/workflows/deploy-file.py
         env:
