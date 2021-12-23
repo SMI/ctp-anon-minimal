@@ -15,7 +15,7 @@
         <dependency>
             <groupId>uk.ac.ed.epcc</groupId>
             <artifactId>ctpanonymiser_minimal</artifactId>
-            <version>1.0.5</version>
+            <version>1.0.7</version>
             <classifier>jar-with-dependencies</classifier>
             <scope>test</scope>
         </dependency>
