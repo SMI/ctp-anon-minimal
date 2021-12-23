@@ -18,7 +18,9 @@ repo.
 
 ## Usage
 
-In a Maven `pom.xml`:
+First authenticate with GitHub packages by following
+[this](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#installing-a-package)
+guide. Then add this package to your Maven `pom.xml`:
 
 ```xml
 <dependency>
