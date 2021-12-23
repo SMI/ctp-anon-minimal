@@ -19,7 +19,7 @@ repo.
 ## Usage
 
 First authenticate with GitHub packages by following
-[this](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#installing-a-package)
+[this](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#authenticating-to-github-packages)
 guide. Then add this package to your Maven `pom.xml`:
 
 ```xml
