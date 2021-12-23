@@ -53,5 +53,3 @@ jobs:
         run: ./scripts/build/run-all.bash
       - name: deploy
         run: mvn -B -ntp -DskipTests deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
