@@ -21,4 +21,4 @@ jobs:
       - name: run PR script
         run: ./.github/workflows/create-update-pr.py
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SMI_BOT_TOKEN }}
