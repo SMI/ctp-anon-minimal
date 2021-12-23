@@ -9,6 +9,8 @@ UPDATE_BRANCH = "vendor-update"
 UPDATE_TITLE = "auto-update vendor repos"
 ORG = "smi"
 REPO = "ctp-anon-minimal"
+COMMITTER_USERNAME = "smi-bot"
+COMMITTER_EMAIL = "58794389+SMI-Bot@users.noreply.github.com"
 
 
 def run(*cmd: str) -> None:
@@ -31,8 +33,8 @@ def main() -> int:
 
     run("git", "checkout", "-b", UPDATE_BRANCH)
     run("git", "add", "-u")
-    run("git", "config", "user.name", "github-actions")
-    run("git", "config", "user.email", "github-actions@github.com")
+    run("git", "config", "user.name", COMMITTER_USERNAME)
+    run("git", "config", "user.email", COMMITTER_EMAIL)
     run("git", "commit", "-m", UPDATE_TITLE)
     run("git", "push", "origin", "HEAD", "-f")
 
