@@ -13,6 +13,9 @@ unavailable in source form are:
 -   `jai_imageio-1.2-pre-dr-b04.jar`
 -   `pixelmed_codec.jar`
 
+These need to be installed separately in order to use the jars published by this
+repo.
+
 ## Usage
 
 In a Maven `pom.xml`:
