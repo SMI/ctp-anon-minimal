@@ -53,6 +53,8 @@ There are 2 test suites:
     the built jar from the main code as a dependency. The tests in this project
     verify that the jar packaging is valid, and is where most new tests should
     be created. These can be run with `mvn -f ./integration/pom.xml test`
+    -   Note: Some LFS-tracked files are required to run these tests. First run
+        `git lfs pull`
 
 ### pre-commit
 
