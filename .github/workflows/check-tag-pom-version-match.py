@@ -17,8 +17,9 @@ def main() -> int:
     if pom_version != tag_name:
         print(
             (
-                "Git tag and pom versions do not match. Did you forget to run "
-                "scripts/set-versions.bash?"
+                "Git tag and pom versions do not match: "
+                f"'{tag_name}' vs. '{pom_version}'. "
+                "Did you forget to run scripts/set-versions.bash?"
             ),
             file=sys.stderr,
         )
