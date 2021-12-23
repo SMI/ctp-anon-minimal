@@ -1,7 +1,7 @@
 # CTP Anonymiser Minimal
 
 [![main](https://github.com/smi/ctp-anon-minimal/actions/workflows/main.yml/badge.svg)](https://github.com/smi/ctp-anon-minimal/actions/workflows/main.yml)
-[![pre-commit](https://github.com/smi/ctp-anon-minimal/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/smi/ctp-anon-minimal/actions/workflows/pre-commit.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/SMI/ctp-anon-minimal/main.svg)](https://results.pre-commit.ci/latest/github/SMI/ctp-anon-minimal/main)
 
 A minimal re-packaging of the RSNA MIRC Clinical Trials Processor (CTP), mainly
 providing the `DICOMAnonymizer` class.
