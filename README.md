@@ -42,8 +42,8 @@ Requirements:
 -   Maven
 -   Ant
 
-After cloning, run `./build/run-all.bash`, which will pull-in the sources and
-create the `src-generated` directory.
+After cloning, run `./scripts/build/run-all.bash`, which will pull-in the
+sources and create the `src-generated` directory.
 
 ### Testing
 
