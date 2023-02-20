@@ -8,7 +8,6 @@ _NAMESPACE = "{http://maven.apache.org/POM/4.0.0}"
 
 
 def main() -> int:
-
     pom_root = ElementTree.parse("pom.xml").getroot()
     pom_version = pom_root.findtext(f"{_NAMESPACE}version")
 

@@ -7,7 +7,6 @@ _NAMESPACE = "{http://maven.apache.org/POM/4.0.0}"
 
 
 def main() -> int:
-
     tag_name = os.environ["GITHUB_REF_NAME"]
 
     pom_root = ElementTree.parse("pom.xml").getroot()
