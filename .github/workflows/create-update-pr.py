@@ -19,7 +19,6 @@ def run(*cmd: str) -> None:
 
 
 def main() -> int:
-
     gh_token = os.environ.get("GITHUB_TOKEN")
 
     changes = False
