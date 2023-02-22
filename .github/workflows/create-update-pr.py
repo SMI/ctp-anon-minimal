@@ -50,8 +50,9 @@ def main() -> int:
     req = urllib.request.Request(
         f"https://api.github.com/repos/{ORG}/{REPO}/pulls",
         headers={
-            "accept": "application/vnd.github.v3+json",
+            "Accept": "application/vnd.github.v3+json",
             "Authorization": f"token {gh_token}",
+            "Content-Type": "application/json",
         },
         data=data,
     )
