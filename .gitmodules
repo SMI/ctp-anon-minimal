@@ -2,11 +2,14 @@
     path = vendor/CTP
     url = https://github.com/johnperry/CTP
     branch = master
+    shallow = true
 [submodule "vendor/Util"]
     path = vendor/Util
     url = https://github.com/johnperry/Util
     branch = master
+    shallow = true
 [submodule "vendor/dcm4che-1.4-JP"]
     path = vendor/dcm4che-1.4-JP
     url = https://github.com/johnperry/dcm4che-1.4-JP
     branch = master
+    shallow = true
