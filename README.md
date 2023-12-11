@@ -10,8 +10,8 @@ The majority of the package is built from the vendored sources, allowing
 dependencies to be updated freely. The remaining dependencies which are
 unavailable in source form are:
 
--   `jai_imageio-1.2-pre-dr-b04.jar`
--   `pixelmed_codec.jar`
+- `jai_imageio-1.2-pre-dr-b04.jar`
+- `pixelmed_codec.jar`
 
 These need to be installed separately in order to use the jars published by this
 repo.
@@ -38,9 +38,9 @@ This has only been tested on Linux so far.
 
 Requirements:
 
--   Java 8 SDK
--   Maven
--   Ant
+- Java 8 SDK
+- Maven
+- Ant
 
 After cloning, run `./scripts/build/run-all.bash`, which will pull-in the
 sources and create the `src-generated` directory.
@@ -49,14 +49,14 @@ sources and create the `src-generated` directory.
 
 There are 2 test suites:
 
--   `tests` contains some basic sanity checks against the `src-generated`
-    classes. Run these with `mvn test` from the root dir
--   The `integration` directory contains a separate Maven project which pulls-in
-    the built jar from the main code as a dependency. The tests in this project
-    verify that the jar packaging is valid, and is where most new tests should
-    be created. These can be run with `mvn -f ./integration/pom.xml test`
-    -   Note: Some LFS-tracked files are required to run these tests. First run
-        `git lfs pull`
+- `tests` contains some basic sanity checks against the `src-generated`
+  classes. Run these with `mvn test` from the root dir
+- The `integration` directory contains a separate Maven project which pulls-in
+  the built jar from the main code as a dependency. The tests in this project
+  verify that the jar packaging is valid, and is where most new tests should
+  be created. These can be run with `mvn -f ./integration/pom.xml test`
+  - Note: Some LFS-tracked files are required to run these tests. First run
+    `git lfs pull`
 
 ### pre-commit
 
