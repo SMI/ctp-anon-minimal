@@ -48,7 +48,7 @@ repos:
       - id: prettier
         args: [--config, .meta/prettierrc.yml]
   - repo: https://github.com/adrienverge/yamllint
-    rev: "v1.33.0"
+    rev: "v1.34.0"
     hooks:
       - id: yamllint
         args: [-c, .meta/yamllint.yaml]
@@ -91,7 +91,7 @@ repos:
       - id: mypy
         args: [--config-file, .meta/mypy.ini]
   - repo: https://github.com/psf/black
-    rev: "24.1.1"
+    rev: "24.2.0"
     hooks:
       - id: black
   - repo: https://github.com/PyCQA/flake8
