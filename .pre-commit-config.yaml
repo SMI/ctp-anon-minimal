@@ -54,7 +54,7 @@ repos:
         args: [-c, .meta/yamllint.yaml]
   # Shell
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: "v0.9.0.6"
+    rev: "v0.10.0.1"
     hooks:
       - id: shellcheck
   # Python
@@ -86,12 +86,12 @@ repos:
       - id: yesqa
         additional_dependencies: [pep8-naming]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.8.0"
+    rev: "v1.9.0"
     hooks:
       - id: mypy
         args: [--config-file, .meta/mypy.ini]
   - repo: https://github.com/psf/black
-    rev: "24.2.0"
+    rev: "24.3.0"
     hooks:
       - id: black
   - repo: https://github.com/PyCQA/flake8
