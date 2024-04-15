@@ -91,7 +91,7 @@ repos:
       - id: mypy
         args: [--config-file, .meta/mypy.ini]
   - repo: https://github.com/psf/black
-    rev: "24.3.0"
+    rev: "24.4.0"
     hooks:
       - id: black
   - repo: https://github.com/PyCQA/flake8
