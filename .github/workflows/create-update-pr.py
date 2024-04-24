@@ -69,7 +69,7 @@ def main() -> int:
         },
     ).encode()
     req = urllib.request.Request(
-        pr_data["url"],
+        f"{pr_data['url']}/requested_reviewers",
         headers={
             "Accept": "application/vnd.github.v3+json",
             "Authorization": f"token {gh_token}",
