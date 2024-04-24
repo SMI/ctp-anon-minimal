@@ -37,6 +37,8 @@ def main() -> int:
     run("git", "commit", "-m", UPDATE_TITLE)
     run("git", "push", "origin", "HEAD", "-f")
 
+    # Create PR
+
     data = json.dumps(
         {
             "head": UPDATE_BRANCH,
@@ -57,6 +59,27 @@ def main() -> int:
     )
     with urllib.request.urlopen(req) as resp:
         print(resp.msg)
+        pr_data = json.loads(resp.read().decode())
+
+    # Request reviewers
+
+    data = json.dumps(
+        {
+            "team_reviewers": ["reviewers"],
+        },
+    ).encode()
+    req = urllib.request.Request(
+        pr_data["url"],
+        headers={
+            "Accept": "application/vnd.github.v3+json",
+            "Authorization": f"token {gh_token}",
+            "Content-Type": "application/json",
+        },
+        data=data,
+    )
+    with urllib.request.urlopen(req) as resp:
+        print(resp.msg)
+
     return 0
 
 
