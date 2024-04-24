@@ -55,15 +55,8 @@ def main() -> int:
         },
         data=data,
     )
-
-    # debug
-    try:
-        with urllib.request.urlopen(req) as resp:
-            print(resp.msg)
-    except urllib.error.HTTPError as e:
-        print(e.reason)
-        return 1
-
+    with urllib.request.urlopen(req) as resp:
+        print(resp.msg)
     return 0
 
 
