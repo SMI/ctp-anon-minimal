@@ -1,4 +1,3 @@
-
 # CTP Anonymiser Minimal
 
 [![main](https://github.com/smi/ctp-anon-minimal/actions/workflows/main.yml/badge.svg)](https://github.com/smi/ctp-anon-minimal/actions/workflows/main.yml)
